@@ -1,6 +1,6 @@
 import { ActionTypes, INCREMENT_COUNTER } from "../types";
 
-export function increaseCounter(): ActionTypes {
+export function incrementCounter(): ActionTypes {
   return {
     type: INCREMENT_COUNTER,
   };
