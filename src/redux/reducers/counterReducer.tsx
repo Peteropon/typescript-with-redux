@@ -10,7 +10,7 @@ export default function counterReducer(
 ) {
   switch (action.type) {
     case INCREMENT_COUNTER:
-      return state++;
+      return state + 1;
 
     default:
       return state;
