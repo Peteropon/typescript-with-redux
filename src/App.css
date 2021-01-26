@@ -19,5 +19,28 @@
 
 main {
   min-height: 50vh;
+  justify-content: center;
+  padding-top: 2em;
+}
+
+.home-main {
   background-color: darkolivegreen;
+}
+
+.results-main {
+  background-color: rgb(228, 157, 70);
+}
+
+button {
+  padding: 1em;
+  background-color: rgb(156, 190, 95);
+  font-size: large;
+  border-radius: 10px;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+
+button:hover {
+  background-color: rgb(28, 68, 28);
+  color: white;
 }

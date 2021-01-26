@@ -5,8 +5,10 @@ import { useDispatch } from "react-redux";
 const HomePage = () => {
   const dispatch = useDispatch();
   return (
-    <main>
-      <button onClick={() => dispatch(incrementCounter())}>Click me</button>
+    <main className="home-main">
+      <button onClick={() => dispatch(incrementCounter())}>
+        Push the button
+      </button>
     </main>
   );
 };

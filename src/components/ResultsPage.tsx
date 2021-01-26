@@ -9,11 +9,9 @@ type Props = PropsFromState;
 
 const ResultsPage = ({ counter }: Props) => {
   return (
-    <section>
-      <p>
-        Here are the results: <span>{counter}</span>
-      </p>
-    </section>
+    <main className="results-main">
+      <h3>The button has been pressed {counter} times!</h3>
+    </main>
   );
 };
 
