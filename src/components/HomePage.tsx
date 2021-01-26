@@ -1,9 +1,12 @@
 import React from "react";
+import { incrementCounter } from "../redux/actions/counterActions";
+import { useDispatch } from "react-redux";
 
 const HomePage = () => {
+  const dispatch = useDispatch();
   return (
     <main>
-      <button>Click me</button>
+      <button onClick={() => dispatch(incrementCounter())}>Click me</button>
     </main>
   );
 };
