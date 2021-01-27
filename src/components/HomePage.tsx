@@ -1,4 +1,3 @@
-import React from "react";
 import { incrementCounter } from "../redux/actions/counterActions";
 import { useDispatch } from "react-redux";
 

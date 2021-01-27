@@ -13,8 +13,12 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-item {
+  color: white;
+}
+
+.nav-item:active {
+  color: #f15b2a;
 }
 
 main {
