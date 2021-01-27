@@ -1,16 +1,19 @@
 import { connect } from "react-redux";
 import { CounterState } from "../redux/types";
 
-interface PropsFromState {
-  counter: number;
-}
-
-type Props = PropsFromState;
+type Props = CounterState;
 
 const ResultsPage = ({ counter }: Props) => {
   return (
     <main className="results-main">
-      <h3>The button has been pressed {counter} times!</h3>
+      {counter === 0 ? (
+        <h3>The button has not been pressed yet :(</h3>
+      ) : (
+        <h3>
+          The button has been pressed {counter}{" "}
+          {counter === 1 ? "time" : "times"}!
+        </h3>
+      )}
     </main>
   );
 };
