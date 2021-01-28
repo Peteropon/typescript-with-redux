@@ -35,6 +35,14 @@ main {
   background-color: rgb(228, 157, 70);
 }
 
+.link-wrapper {
+  margin: 1em 0;
+}
+
+.link-wrapper > * {
+  color: #282c34;
+}
+
 button {
   padding: 1em;
   background-color: rgb(156, 190, 95);

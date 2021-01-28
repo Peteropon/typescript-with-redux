@@ -1,5 +1,6 @@
 import { connect } from "react-redux";
 import { CounterState } from "../redux/types";
+import { Link } from "react-router-dom";
 
 type Props = CounterState;
 
@@ -14,6 +15,9 @@ const ResultsPage = ({ counter }: Props) => {
           {counter === 1 ? "time" : "times"}!
         </h3>
       )}
+      <div className="link-wrapper">
+        <Link to="/">Back to home</Link>
+      </div>
     </main>
   );
 };
