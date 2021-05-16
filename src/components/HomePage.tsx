@@ -10,7 +10,9 @@ const HomePage = () => {
         Push the button
       </button>
       <div className="link-wrapper">
-        <Link to="/results">See the results</Link>
+        <Link className="link" to="/results">
+          See the results
+        </Link>
       </div>
     </main>
   );

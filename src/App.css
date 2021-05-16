@@ -39,7 +39,7 @@ main {
   margin: 1em 0;
 }
 
-.link-wrapper > * {
+.link {
   color: #282c34;
 }
 

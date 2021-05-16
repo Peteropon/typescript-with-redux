@@ -16,7 +16,9 @@ const ResultsPage = ({ counter }: Props) => {
         </h3>
       )}
       <div className="link-wrapper">
-        <Link to="/">Back to home</Link>
+        <Link className="link" to="/">
+          Back to home
+        </Link>
       </div>
     </main>
   );
