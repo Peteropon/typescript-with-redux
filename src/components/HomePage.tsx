@@ -1,9 +1,9 @@
 import { incrementCounter } from "../redux/actions/counterActions";
-import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
+import { useAppDispatch } from "../hooks";
 
 const HomePage = () => {
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
   return (
     <main className="home-main">
       <button onClick={() => dispatch(incrementCounter())}>
