@@ -1,10 +1,8 @@
-import { connect } from "react-redux";
-import { CounterState } from "../redux/types";
 import { Link } from "react-router-dom";
+import { useAppSelector } from "../hooks";
 
-type Props = CounterState;
-
-const ResultsPage = ({ counter }: Props) => {
+const ResultsPage = () => {
+  const counter = useAppSelector((state) => state.counter);
   return (
     <main className="results-main">
       {counter === 0 ? (
@@ -24,10 +22,4 @@ const ResultsPage = ({ counter }: Props) => {
   );
 };
 
-function mapStateToProps(state: CounterState) {
-  return {
-    counter: state.counter,
-  };
-}
-
-export default connect(mapStateToProps)(ResultsPage);
+export default ResultsPage;
