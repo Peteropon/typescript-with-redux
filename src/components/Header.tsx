@@ -15,7 +15,6 @@ const Header = () => {
         <NavLink className="nav-item" activeStyle={activeStyle} to="/results">
           Results
         </NavLink>
-        <p>Oderland Test</p>
       </nav>
     </header>
   );
